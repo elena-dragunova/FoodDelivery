@@ -1,0 +1,47 @@
+<nav>
+  <div class="navbar-logo">
+    <a routerLink="/">
+      <img src="assets/images/logo.png" alt="">
+    </a>
+  </div>
+  <div class="navbar-nav">
+    <div class="container-wide">
+      <ul class="navbar-social">
+        <li>
+          <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+        </li>
+        <li>
+            <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+        </li>
+        <li>
+            <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+        </li>
+        <li>
+            <a href="#"><i class="fa fa-youtube-play" aria-hidden="true"></i></a>
+        </li>
+        <li>
+            <a href="#"><i class="fa fa-pinterest-p" aria-hidden="true"></i></a>
+        </li>
+      </ul>
+      <ul class="navbar-menu">
+        <li routerLinkActive="active" [routerLinkActiveOptions]="{exact:true}"><a routerLink="/">Home</a></li>
+        <li><a routerLink="">Products</a></li>
+        <li routerLinkActive="active"><a routerLink="/about">About Us</a></li>
+        <li routerLinkActive="active"><a routerLink="/delivery">Delivery and Payment</a></li>
+        <li routerLinkActive="active"><a routerLink="/contacts">Contacts</a></li>
+      </ul>
+      <ul class="navbar-icons">
+        <li>
+          <a routerLink="">
+            <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+            <span class="cart-quantity">0</span>
+          </a>
+        </li>
+        <li>
+            <a routerLink=""><i class="fa fa-search" aria-hidden="true"></i></a>
+        </li>
+      </ul>
+    </div>
+
+  </div>
+</nav>

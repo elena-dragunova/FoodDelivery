@@ -1,1 +1,82 @@
-/* You can add global styles to this file, and also import other style files */
+@font-face {
+    font-family: "Averia Serif Libre";
+    src: url(assets/fonts/Averia/AveriaSerifLibre-Regular.ttf) format("truetype");
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Averia Serif Libre";
+    src: url(assets/fonts/Averia/AveriaSerifLibre-Light.ttf) format("truetype");
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Averia Serif Libre";
+    src: url(assets/fonts/Averia/AveriaSerifLibre-Bold.ttf) format("truetype");
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Karla";
+    src: url(assets/fonts/Karla/Karla-Regular.ttf) format("truetype");
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Karla";
+    src: url(assets/fonts/Karla/Karla-Bold.ttf) format("truetype");
+    font-weight: 700;
+    font-style: normal;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-size: 100%;
+    position: relative;
+    min-height: 100vh;
+    
+}
+
+root {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+main {
+    flex: 1 0 auto;
+}
+
+footer {
+    flex: 0 0 auto;
+}
+
+.container {
+    width: 1160px;
+    margin: 0 auto;
+}
+
+.container-wide {
+    width: 1800px;
+    margin:  0 auto;
+}
+
+
+@media screen and (max-width: 1840px) {
+    .container-wide {
+        width: calc(100% - 40px);
+        margin: 0 20px;
+    }
+}
+
+@media screen and (max-width: 1220px) {
+    .container {
+        width: calc(100% - 60px);
+        margin: 0 30px;
+    }
+}
