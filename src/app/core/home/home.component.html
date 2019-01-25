@@ -1,3 +1,57 @@
-<p>
-  home works!
-</p>
+<div class="home-page">
+
+  <section class="home-promo">
+    <div class="container-wide">
+      <div class="home-promo__grid">
+        <div *ngFor="let promo of promoItems; index as i" class="home-promo__grid-item" [ngStyle]="{backgroundImage: 'url(' + promo.imageSrc + ')'}">
+
+          <div class="home-promo__info">
+            <p class="home-promo__grid-text">{{promo.text}}</p>
+            <h1 *ngIf="i === 1" class="home-promo__grid-title">{{promo.title}}</h1>
+            <h2 *ngIf="i !== 1" class="home-promo__grid-title">{{promo.title}}</h2>
+            <a class="main-btn" *ngIf="i === 1">Shop Now!</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="home-new">
+    <div class="container">
+      <h2>What's New?</h2>
+      <p>Fresh ingredients only</p>
+      <div class="home-new__grid">
+
+        <a *ngFor="let newItem of newItems" [href]="newItem.url" class="home-new__grid-item">
+          <div class="home-new__grid-image">
+            <img [src]="newItem.imageSrc" [alt]="newItem.title">
+          </div>
+          <div class="home-new__category">{{newItem.category}}</div>
+          <div class="home-new__title">
+            <h4>{{newItem.title}}</h4>
+          </div>
+        </a>
+
+      </div>
+
+      <a href="#" class="home-new__catalog-link">View All Products</a>
+
+    </div>
+  </section>
+
+  <section class="home-banner">
+    <div class="container-wide">
+      <div class="home-banner__bg" [ngStyle]="{backgroundImage: 'url(' + bannerInfo.imageSrc + ')'}">
+        <div class="banner-center">
+          <p>{{bannerInfo.text}}</p>
+          <h2>{{bannerInfo.title}}</h2>
+          <a class="main-btn">Shop Now!</a>
+        </div>
+      </div>
+      <div class="home-banner__phone">
+        <p>{{bannerInfo.phoneText}} <span>{{bannerInfo.phone}}</span></p>
+      </div>
+    </div>
+  </section>
+
+</div>
