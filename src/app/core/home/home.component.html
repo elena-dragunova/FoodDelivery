@@ -54,4 +54,33 @@
     </div>
   </section>
 
+  <section class="home-advantages">
+    <div class="container-wide">
+      <h2>Our Advantages</h2>
+      <div class="home-advantages__items">
+        <div *ngFor="let advantage of advItems" class="home-advantage__item">
+          <div class="home-advantage__image">
+            <img [src]="advantage.imageSrc" [alt]="advantage.title">
+          </div>
+          <h4>{{advantage.title}}</h4>
+          <p>{{advantage.text}}</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section class="home-gallery">
+    <div class="container-wide">
+      <h2>Gallery</h2>
+      <div class="home-gallery__items">
+        <div *ngFor="let galleryItem of galleryItems" class="home-gallery__item">
+          <div class="home-gallery__item-image">
+            <img [src]="galleryItem.imageSrc" alt="Gallery Image">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
 </div>

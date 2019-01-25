@@ -18,4 +18,12 @@ export class HomeService {
     return this.db.object('/home-banner');
   }
 
+  getAdvantages() {
+    return this.db.list('/home-advantage');
+  }
+
+  getGallery() {
+    return this.db.list('/home-gallery');
+  }
+
 }
