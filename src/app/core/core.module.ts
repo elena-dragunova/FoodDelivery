@@ -7,7 +7,9 @@ import { FooterComponent } from './footer/footer.component';
 import { AboutComponent } from './about/about.component';
 import { DeliveryComponent } from './delivery/delivery.component';
 import { ContactsComponent } from './contacts/contacts.component';
-import { HomeService } from './services/home.service';
+import { HomeService } from './home/services/home.service';
+import { AboutService } from './about/services/about.service';
+import { DeliveryService } from './delivery/services/delivery.service';
 
 @NgModule({
   imports: [
@@ -24,7 +26,9 @@ import { HomeService } from './services/home.service';
     ContactsComponent
   ],
   providers: [
-    HomeService
+    HomeService,
+    AboutService,
+    DeliveryService
   ]
 })
 export class CoreModule { }

@@ -1,0 +1,43 @@
+.delivery-banner {
+    height: 300px;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.delivery-banner h1 {
+    text-align: center;
+    color:#272220;
+    font-family: "Averia Serif Libre", serif;
+    font-size: 32px;
+    font-weight: 700;
+}
+
+.delivery-terms {
+    padding-top: 80px;
+}
+
+.payment-terms {
+    padding-bottom: 80px;
+}
+
+.delivery-page h2 {
+    color:#493e2f;
+    font-family: "Averia Serif Libre", serif;
+    font-size: 30px;
+    font-weight: 700;
+    margin-bottom: 30px;
+}
+
+.delivery-page p {
+    color:#a19d98;
+    font-family: "Karla", sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 24px;
+    margin-bottom: 30px;
+}

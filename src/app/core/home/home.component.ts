@@ -1,5 +1,5 @@
 import { Component, OnInit, OnDestroy } from '@angular/core';
-import { HomeService } from '../services/home.service';
+import { HomeService } from './services/home.service';
 import { Subscription } from 'rxjs/Subscription';
 
 
